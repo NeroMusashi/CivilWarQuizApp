@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Civil War Quiz</string>
+    <string name="civil_war">Civil</string>
+    <string name="civil_war_header">Civil War Facts</string>
+    <string name="first_answer">Question1</string>
+    <string name="first_question">1. What year did the Civil War begin?</string>
+    <string name="second_question">2. Where was the Civil War fought?</string>
+    <string name="third_question">3. What States where the Civil War fought In?</string>
+    <string name="four_question">4. What was the average soldiers age?</string>
+    <string name="america">America</string>
+    <string name="russia">Russia</string>
+    <string name="pennsylvania">Pennsylvania</string>
+    <string name="texas">Texas</string>
+    <string name="new_mexico">New Mexico</string>
+    <string name="british">British Columbia</string>
+    <string name="thirty">30</string>
+    <string name="twenty_eight">28</string>
+    <string name="submit_button">Submit</string>
+    <string name="answer_sheet">Answer Sheet</string>
+    <string name="reset_button">Reset</string>
+</resources>

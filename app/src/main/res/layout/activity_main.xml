@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/picture_header"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:src="@drawable/civilwar1"
+            tools:ignore="ContentDescription"/>
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/CivilWarHeader"
+            android:gravity="center_horizontal"
+            android:text="@string/civil_war_header"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/Question1"
+            style="@style/Questions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/first_question"
+            android:textColor="@color/colorBlack"/>
+
+        <EditText
+            android:id="@+id/first"
+            style="@style/CivilWarHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="26dp"
+            android:layout_marginStart="26dp"
+            android:hint="@string/first_answer"
+            android:inputType="textCapWords"
+            android:textColor="@color/colorBlack"/>
+
+        <TextView
+            android:id="@+id/second"
+            style="@style/Questions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/second_question"
+            android:textColor="@color/colorBlack"/>
+
+        <RadioGroup
+            android:id="@+id/radio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="26dp"
+            android:layout_marginStart="26dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/america_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/america"
+                android:textAppearance="?android:textAppearanceMedium"/>
+
+            <RadioButton
+                android:id="@+id/russia_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/russia"
+                android:textAppearance="?android:textAppearanceMedium"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/third"
+            style="@style/Questions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/third_question"
+            android:textColor="@color/colorBlack"/>
+
+        <CheckBox
+            android:id="@+id/pen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="75dp"
+            android:layout_marginStart="75dp"
+            android:text="@string/pennsylvania"/>
+
+        <CheckBox
+            android:id="@+id/tex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="75dp"
+            android:layout_marginStart="75dp"
+            android:text="@string/texas"/>
+
+        <CheckBox
+            android:id="@+id/newM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="75dp"
+            android:layout_marginStart="75dp"
+            android:text="@string/new_mexico"/>
+
+
+        <CheckBox
+            android:id="@+id/britishC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="75dp"
+            android:layout_marginStart="75dp"
+            android:text="@string/british"/>
+
+        <TextView
+            android:id="@+id/four"
+            style="@style/Questions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/four_question"
+            android:textColor="@color/colorBlack"/>
+
+        <RadioGroup
+            android:id="@+id/radio2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="26dp"
+            android:layout_marginStart="26dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/wrong_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/thirty"
+                android:textAppearance="?android:textAppearanceMedium"/>
+
+            <RadioButton
+                android:id="@+id/right_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/twenty_eight"
+                android:textAppearance="?android:textAppearanceMedium"/>
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="22dp"
+            android:onClick="onSubmit"
+            android:text="@string/submit_button"/>
+
+        <Button
+            android:text="@string/reset_button"
+            android:onClick="resetScore"
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</ScrollView>
